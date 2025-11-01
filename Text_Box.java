@@ -111,10 +111,10 @@ public class Text_Box {
         driver.findElement(By.id("confirmButton")).click();
         driver.switchTo().alert().dismiss();
     }
-
-//   @AfterAll
-//   public void closebrowser(){
-//       driver.close(); //driver remains in the backend close the tab but the driver remain alive
-//      driver.quit();
-//   }
+@AfterAll
+public void closebrowser(){
+  driver.close(); //driver remains in the backend close the tab but the driver remain alive
+  driver.quit();
 }
+}
+
